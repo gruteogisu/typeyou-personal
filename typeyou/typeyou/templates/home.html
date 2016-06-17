@@ -1,9 +1,24 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 {% block title %}
 typeYou
 {% endblock %}
 
 
 {% block content %}
-<h1>typeYou</h1>
+<div id="index-banner" class="parallax-container valign-wrapper">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <h1 class="header center teal-text text-lighten-2">type<span style="color: #EE6E73">You</span></h1>
+      <div class="row center">
+        <h5 class="header col s12 light">typeYou is a smart education tool.</h5>
+      </div>
+      <div class="row center">
+        <a href="#!" id="start-button" class="btn-large waves-effect waves-light teal lighten-1">문제 내기</a>
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <div class="parallax"><img src="{% static "img/home_img_1.jpg" %}" alt="Unsplashed background img 1: typewriter"></div>
+</div>
 {% endblock %}
